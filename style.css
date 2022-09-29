@@ -8,8 +8,9 @@ body {
 }
 
 .content {
-    flex: 1;
+    flex: 1; /* allow content to grow vertically (pushes footer to bottom) */
 }
+
 
 
 /*** Header and Hero Styling ***/
@@ -18,9 +19,7 @@ body {
     background-color: #1F2937;
     display: flex; 
     flex-direction: column; /* header and hero sections will align in a column */
-    padding: 0px 200px; /* add space between edge of container and the content within (header and hero)
-
-    /*border: 1px solid cyan;*/
+    padding: 0px 200px; /* add space between edge of container and the content within (header and hero) */
 }
 
 
@@ -63,9 +62,6 @@ header {
     background-color: #1F2937;
     justify-content: space-between; /* adds space between flex items */
     padding: 100px 0px;
-    /*gap: 40px; /* adds space between placeholder and other hero content */
-    /*height: 250px;*/
-    /* align-items: stretch; /* (default) vertically stretches hero flex items */
 }
 
 .hero-heading {
@@ -134,7 +130,6 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* block(s) will wrap onto next line if they don't have enough space */
-    /*align-items: center;*/
     gap: 40px;
 }
 
@@ -147,28 +142,9 @@ header {
 }
 
 .info-block {
-    width: 200px;
+    width: 200px; /* subtext will match width of illustration/box */
     text-align: center; /* center info subtext under div*/
-    /*
-    display: flex;
-    flex-direction: column;
-    */
-
-    /*
-    min-width: 0;
-    min-height: 0;
-    overflow: hidden;
-    */
-    
 }
-
-/*
-.border {
-    border: 5px solid green;
-    width: 50%;
-    text-align: center;
-}
-*/
 
 
 
@@ -180,14 +156,10 @@ header {
     align-items: center;
     background-color: #E5E7EB;
     padding: 80px;
-
-    /*border: 5px solid blue;*/
 }
 
 .quote-container {
     width: 50%;
-    /*width: 600px;*/
-    /*border: 10px solid pink;*/
 }
 
 .quote {
@@ -210,7 +182,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: 3px solid red;*/
     padding: 90px;
 }
 
@@ -219,26 +190,15 @@ header {
     display: inline-flex; /* treats the container as an inline element (will only by as wide as content) */
     padding: 45px 0px;
     width: 65%;
-    
-    
     justify-content: space-around;
     align-items: center;
-    
-    
     background-color: #3882F6;
     color: white;
     border-radius: 8px;
-
-    /*border: 1px solid red;*/
 }
 
 .call-header {
     margin: 0;
-    /*border: 1px solid red;*/
-}
-
-.call-subtext {
-    /*border: 1px solid red;*/
 }
 
 .call-button {
@@ -256,16 +216,9 @@ header {
 
 footer {
     display: flex;
-
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
     padding: 30px;
     color: #F9FAF8;
 }
-
-/*
-.footer-text {
-    color: #F9FAF8;
-}
-*/

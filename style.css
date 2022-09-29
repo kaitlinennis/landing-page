@@ -97,6 +97,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 
 .left-align-hero,
@@ -133,14 +134,14 @@ header {
 
 .illustration {
     box-sizing: border-box; /* width/height of the element will be the actual defined width/height, takes border & padding into account */
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 12px;
     border: 5px solid #3882F6;
 }
 
 .info-block {
-    width: 250px;
+    width: 200px;
     text-align: center; /* center info subtext under div*/
     /*
     display: flex;
@@ -193,4 +194,52 @@ header {
     text-align: right;
     font-weight: bold;
     font-size: 18px;
+}
+
+
+
+/*** Call to Action Styling ***/
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 3px solid red;*/
+    padding: 90px;
+}
+
+.blue-box {
+    /* center this div horizontally and vertically */
+    display: inline-flex; /* treats the container as an inline element (will only by as wide as content) */
+    padding: 45px 0px;
+    width: 65%;
+    
+    
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    background-color: #3882F6;
+    color: white;
+    border-radius: 8px;
+
+    /*border: 1px solid red;*/
+}
+
+.call-header {
+    margin: 0;
+    /*border: 1px solid red;*/
+}
+
+.call-subtext {
+    /*border: 1px solid red;*/
+}
+
+.call-button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white; /* remove default border */
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 6px;
 }

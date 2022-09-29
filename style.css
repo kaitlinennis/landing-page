@@ -57,8 +57,8 @@ header {
     background-color: #1F2937;
     justify-content: space-between; /* adds space between flex items */
     padding: 100px 0px;
-    gap: 30px; /* adds space between placeholder and other hero content */
-    height: 250px;
+    gap: 40px; /* adds space between placeholder and other hero content */
+    /*height: 250px;*/
     /* align-items: stretch; /* (default) vertically stretches hero flex items */
 }
 

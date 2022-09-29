@@ -110,8 +110,8 @@ header {
 /*** Information Section Styling ***/
 
 .info-section {
-    border: 5px solid red;
     padding: 45px 0px 100px 0px;
+    /* border: 5px solid red; */
 }
 
 .info-header {
@@ -134,11 +134,50 @@ header {
     box-sizing: border-box; /* width/height of the element will be the actual defined width/height, takes border & padding into account */
     width: 150px;
     height: 150px;
-    border: 3px solid #3882F6;
     border-radius: 8px;
+    border: 3px solid #3882F6;
 }
 
 .info-block {
     width: 150px;
     text-align: center; /* center info subtext under div*/
+}
+
+/*
+.border {
+    border: 5px solid green;
+    width: 50%;
+    text-align: center;
+}
+*/
+
+
+
+/*** Quote Section Styling ***/
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 80px;
+
+    /*border: 5px solid blue;*/
+}
+
+.quote-container {
+    width: 45%;
+    /*border: 10px solid pink;*/
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-signature {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
 }

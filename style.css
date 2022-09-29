@@ -20,6 +20,7 @@ body {
     display: flex; 
     flex-direction: column; /* header and hero sections will align in a column */
     padding: 0px 200px; /* add space between edge of container and the content within (header and hero) */
+    flex-wrap: wrap; /* fixes issue of placeholder div partially running off the screen on window resize  */
 }
 
 
@@ -99,13 +100,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
 }
 
 .left-align-hero,
 .placeholder {
-    /* make placeholder and hero content each take up half of container (will be same width) */
-    width: 50%;
+    /* make flex items (placeholder and hero content) each take 
+    up half of container (will be same basis/ideal size) */
+
+    /* width: 45%;*/
+    flex-basis: 48%; /* fixes issue of the flex items overlapping when window resizes */
 }
 
 
@@ -114,7 +117,6 @@ header {
 
 .info-section {
     padding: 45px 0px 100px 0px;
-    /* border: 5px solid red; */
 }
 
 .info-header {
@@ -188,7 +190,7 @@ header {
 .blue-box {
     /* center this div horizontally and vertically */
     display: inline-flex; /* treats the container as an inline element (will only by as wide as content) */
-    padding: 45px 0px;
+    padding: 45px 10px;
     width: 65%;
     justify-content: space-around;
     align-items: center;

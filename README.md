@@ -5,5 +5,7 @@ I learned into building a web page design from scratch. Overall this project
 helped me learn more about how to position elements the way I want 
 and create a useful layout on a web page.
 
+View the project here: https://kaitlinennis.github.io/landing-page/
+
 I replicated this web page design from a screenshot provided to me
 (via The Odin Project https://www.theodinproject.com/lessons/foundations-landing-page).

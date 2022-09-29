@@ -104,3 +104,41 @@ header {
     /* make placeholder and hero content each take up half of container (will be same width) */
     width: 50%;
 }
+
+
+
+/*** Information Section Styling ***/
+
+.info-section {
+    border: 5px solid red;
+    padding: 45px 0px 100px 0px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 800; /* extra bold */
+    color: #1F2937;
+    text-align: center;
+    margin-top: 0; /* remove default margin */
+    margin-bottom: 45px; /* replace default margin */
+}
+
+.info-block-container {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 40px;
+}
+
+.illustration {
+    box-sizing: border-box; /* width/height of the element will be the actual defined width/height, takes border & padding into account */
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+}
+
+.info-block {
+    width: 150px;
+    text-align: center; /* center info subtext under div*/
+}

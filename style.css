@@ -2,8 +2,14 @@ body {
     height: 100vh; /* body will be same height as the viewport */
     margin: 0; /* removes default margin */
     font-family: Roboto, sans-serif; 
+
+    display: flex;
+    flex-direction: column;
 }
 
+.content {
+    flex: 1;
+}
 
 
 /*** Header and Hero Styling ***/
@@ -243,3 +249,23 @@ header {
     padding: 8px 32px;
     border-radius: 6px;
 }
+
+
+
+/*** Footer Styling ***/
+
+footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 30px;
+    color: #F9FAF8;
+}
+
+/*
+.footer-text {
+    color: #F9FAF8;
+}
+*/

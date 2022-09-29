@@ -4,9 +4,26 @@ body {
     font-family: Roboto, sans-serif; 
 }
 
+
+
+/*** Header and Hero Styling ***/
+
+.header-hero {
+    background-color: #1F2937;
+    display: flex; 
+    flex-direction: column; /* header and hero sections will align in a column */
+    padding: 0px 200px; /* add space between edge of container and the content within (header and hero)
+
+    /*border: 1px solid cyan;*/
+}
+
+
+
+/*** Header Styling ***/
+
 header {
     display: flex; /* displays logo and links in a row at top of page */
-    justify-content: space-around; /* horizontal space on each side of flex items */
+    justify-content: space-between; /* pushes logo and links to opposite edges */
     align-items: center; /* centers header items vertically */
     background-color: #1F2937;
 }
@@ -30,4 +47,60 @@ header {
     text-decoration: none; /* removes underline from links */
     color: #E5E7EB;
     font-size: 18px;
+}
+
+
+
+/*** Hero Styling ***/
+.hero {
+    display: flex; /* display hero flex items in a row */
+    background-color: #1F2937;
+    justify-content: space-between; /* adds space between flex items */
+    padding: 100px 0px;
+    gap: 30px; /* adds space between placeholder and other hero content */
+    height: 250px;
+    /* align-items: stretch; /* (default) vertically stretches hero flex items */
+}
+
+.hero-heading {
+    font-size: 48px;
+    font-weight: 800; /* extra bold */
+    color: #F9FAF8;
+    margin: 0; /* remove default margin */
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0; /* remove default margin */
+}
+
+.hero-heading,
+.hero-text {
+      margin-bottom: 12px; /* adds space between hero heading/text/button */
+}
+
+.hero-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: none; /* remove default border */
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 4px;
+}
+
+.placeholder {
+    color: white;
+    background-color: gray;
+
+    /*center text inside the div horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-align-hero,
+.placeholder {
+    /* make placeholder and hero content each take up half of container (will be same width) */
+    width: 50%;
 }

@@ -1,5 +1,5 @@
 body {
-    height: 100vh; /* body will be same height as the viewport */
+    height: 100vh;
     margin: 0; /* removes default margin */
     font-family: Roboto, sans-serif; 
 
@@ -8,7 +8,7 @@ body {
 }
 
 .content {
-    flex: 1; /* allow content to grow vertically (pushes footer to bottom) */
+    flex: 1; /* allows content to grow vertically (pushes footer to bottom) */
 }
 
 
@@ -18,9 +18,9 @@ body {
 .header-hero {
     background-color: #1F2937;
     display: flex; 
-    flex-direction: column; /* header and hero sections will align in a column */
-    padding: 0px 200px; /* add space between edge of container and the content within (header and hero) */
-    flex-wrap: wrap; /* fixes issue of placeholder div partially running off the screen on window resize  */
+    flex-direction: column;
+    padding: 0px 200px;
+    flex-wrap: wrap; /* fixes issue of the placeholder div partially running off the screen on window resize  */
 }
 
 
@@ -28,9 +28,9 @@ body {
 /*** Header Styling ***/
 
 header {
-    display: flex; /* displays logo and links in a row at top of page */
+    display: flex; /* displays logo and links in a single row at top of page */
     justify-content: space-between; /* pushes logo and links to opposite edges */
-    align-items: center; /* centers header items vertically */
+    align-items: center; 
     background-color: #1F2937;
 }
 
@@ -40,17 +40,17 @@ header {
 }
 
 .nav-links {
-    list-style: none; /* removes bullet points */
-    display: flex; /* display nav links in a row */
-    gap: 15px; /* add space between list item links */
+    list-style: none;
+    display: flex; /* displays nav links in a single row */
+    gap: 15px;
 
-    /* remove default margin & padding */
+    /* removes default margin & padding */
     margin: 0;
     padding: 0;
 }
 
 .nav-links a {
-    text-decoration: none; /* removes underline from links */
+    text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -59,28 +59,28 @@ header {
 
 /*** Hero Styling ***/
 .hero {
-    display: flex; /* display hero flex items in a row */
+    display: flex; /* displays hero flex items in a row */
     background-color: #1F2937;
-    justify-content: space-between; /* adds space between flex items */
+    justify-content: space-between; /* adds space between flex items (so our flex items are pushed to the edges) */
     padding: 100px 0px;
 }
 
 .hero-heading {
     font-size: 48px;
-    font-weight: 800; /* extra bold */
+    font-weight: 800;
     color: #F9FAF8;
-    margin: 0; /* remove default margin */
+    margin: 0; /* removes default margin */
 }
 
 .hero-text {
     font-size: 18px;
     color: #E5E7EB;
-    margin: 0; /* remove default margin */
+    margin: 0; /* removes default margin */
 }
 
 .hero-heading,
 .hero-text {
-      margin-bottom: 12px; /* adds space between hero heading/text/button */
+      margin-bottom: 12px;
 }
 
 .hero-button {
@@ -96,7 +96,6 @@ header {
     color: white;
     background-color: gray;
 
-    /*center text inside the div horizontally and vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,11 +103,9 @@ header {
 
 .left-align-hero,
 .placeholder {
-    /* make flex items (placeholder and hero content) each take 
-    up half of container (will be same basis/ideal size) */
-
-    /* width: 45%;*/
-    flex-basis: 48%; /* fixes issue of the flex items overlapping when window resizes */
+    /* Makes our flex items (placeholder and hero content) each take 
+    up approx. half of container (items will be same basis/ideal size) */
+    flex-basis: 48%;
 }
 
 
@@ -121,11 +118,11 @@ header {
 
 .info-header {
     font-size: 36px;
-    font-weight: 800; /* extra bold */
+    font-weight: 800;
     color: #1F2937;
     text-align: center;
-    margin-top: 0; /* remove default margin */
-    margin-bottom: 45px; /* replace default margin */
+    margin-top: 0; /* removes default margin */
+    margin-bottom: 45px; /* replaces default margin */
 }
 
 .info-block-container {
@@ -136,7 +133,7 @@ header {
 }
 
 .illustration {
-    box-sizing: border-box; /* width/height of the element will be the actual defined width/height, takes border & padding into account */
+    box-sizing: border-box; /* width/height of the element will be the actual defined width/height (to avoid confusion)-- takes border & padding into account */
     width: 200px;
     height: 200px;
     border-radius: 12px;
@@ -144,8 +141,8 @@ header {
 }
 
 .info-block {
-    width: 200px; /* subtext will match width of illustration/box */
-    text-align: center; /* center info subtext under div*/
+    width: 200px; /* subtext will match width of the illustration/box above it */
+    text-align: center;
 }
 
 
@@ -154,8 +151,7 @@ header {
 
 .quote-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background-color: #E5E7EB;
     padding: 80px;
 }
@@ -181,14 +177,13 @@ header {
 /*** Call to Action Styling ***/
 
 .call-to-action {
-    display: flex;
+    display: flex; /* displays text and button in a single row */
     justify-content: center;
     align-items: center;
     padding: 90px;
 }
 
 .blue-box {
-    /* center this div horizontally and vertically */
     display: inline-flex; /* treats the container as an inline element (will only by as wide as content) */
     padding: 45px 10px;
     width: 65%;
@@ -200,13 +195,13 @@ header {
 }
 
 .call-header {
-    margin: 0;
+    margin: 0; /* removes default margin */
 }
 
 .call-button {
     background-color: #3882F6;
     color: white;
-    border: 2px solid white; /* remove default border */
+    border: 2px solid white; /* removes default border */
     font-weight: bold;
     padding: 8px 32px;
     border-radius: 6px;
